@@ -8,38 +8,41 @@
     body, html {
       margin: 0;
       padding: 0;
-      height: 100%;
       width: 100%;
     }
-    .full-page-image {
-      background-image: url('images/programacion.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 100%;
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      position: fixed;
       width: 100%;
+      top: 0;
+      left: 0;
       display: flex;
       justify-content: center;
-      align-items: center;
     }
-    .content {
+    nav a {
       color: white;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
-      padding: 20px;
-      border-radius: 10px;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.2em;
     }
-    .hobby-section {
+    section {
       padding: 60px 20px;
+      min-height: 100vh;
+    }
+    .principal {
+      padding-top: 70px; /* Para que el contenido no esté debajo del menú */
       text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .hobbies, .matematicas-aplicadas {
       background-color: #f4f4f4;
+      padding: 20px;
     }
-    .hobby-section h2 {
-      color: #333;
-    }
-    .hobby-section p {
-      color: #666;
-    }
-    .hobby-image {
+    .hobbies img, .matematicas-aplicadas img {
       max-width: 100%;
       height: auto;
       margin-bottom: 10px;
@@ -47,46 +50,48 @@
   </style>
 </head>
 <body>
-  <div class="full-page-image">
-    <div class="content">
-      <h1>Bienvenido a mi página de GitHub</h1>
-      <p>¡Hola, mundo! Este es mi primer GitHub Page.</p>
-    </div>
-  </div>
+  <nav>
+    <a href="#principal">Principal</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#matematicas-aplicadas">Matemáticas Aplicadas</a>
+  </nav>
 
-  <div class="hobby-section">
+  <section id="principal" class="principal">
+    <h1>Bienvenido a mi página de GitHub</h1>
+    <p>¡Hola, mundo! Este es mi primer GitHub Page.</p>
+    <p><a href="docs/CV.pdf" target="_blank">Descargar mi CV</a></p>
+    <img src="images/programacion.jpg" alt="Programación" style="max-width:100%; height:auto;">
+  </section>
+
+  <section id="hobbies" class="hobbies">
     <h2>Hobbies</h2>
-    <div>
-      <h3>Natación</h3>
-      <p>Practico natación regularmente. Es una actividad que me ayuda a mantenerme en forma y relajarme.</p>
-      <img src="images/natacion.jpg" alt="Natación" class="hobby-image">
-    </div>
-    <div>
-      <h3>Comida</h3>
-      <p>Soy una apasionada de la comida. Me encanta probar nuevas recetas y experimentar en la cocina.</p>
-      <img src="images/comida.jpg" alt="Comida" class="hobby-image">
-    </div>
-    <div>
-      <h3>Correr</h3>
-      <p>Disfruto correr al aire libre. Me gusta participar en carreras locales y mantener un estilo de vida activo.</p>
-      <img src="images/correr.jpg" alt="Correr" class="hobby-image">
-    </div>
-    <div>
-      <h3>Bordar</h3>
-      <p>Bordar es una de mis actividades favoritas. Encuentro mucha satisfacción en crear diseños hermosos con hilo y aguja.</p>
-      <img src="images/bordar.jpg" alt="Bordar" class="hobby-image">
-    </div>
-    <div>
-      <h3>Rompecabezas</h3>
-      <p>Me encanta resolver rompecabezas en mi tiempo libre. Es una excelente forma de ejercitar la mente.</p>
-      <img src="images/rompecabezas.jpg" alt="Rompecabezas" class="hobby-image">
-    </div>
-  </div>
+    <p>Aquí puedes agregar fotos y descripciones de tus hobbies.</p>
 
-  <div class="hobby-section">
+    <h3>Natación</h3>
+    <p>Practico natación regularmente. Es una actividad que me ayuda a mantenerme en forma y relajarme.</p>
+    <img src="natacion.jpg" alt="Natación">
+
+    <h3>Comida</h3>
+    <p>Soy una apasionada de la comida. Me encanta probar nuevas recetas y experimentar en la cocina.</p>
+    <img src="comida.gpj" alt="Comida">
+
+    <h3>Correr</h3>
+    <p>Disfruto correr al aire libre. Me gusta participar en carreras locales y mantener un estilo de vida activo.</p>
+    <img src="images/correr.jpg" alt="Correr">
+
+    <h3>Bordar</h3>
+    <p>Bordar es una de mis actividades favoritas. Encuentro mucha satisfacción en crear diseños hermosos con hilo y aguja.</p>
+    <img src="images/bordar.jpg" alt="Bordar">
+
+    <h3>Rompecabezas</h3>
+    <p>Me encanta resolver rompecabezas en mi tiempo libre. Es una excelente forma de ejercitar la mente.</p>
+    <img src="images/rompecabezas.jpg" alt="Rompecabezas">
+  </section>
+
+  <section id="matematicas-aplicadas" class="matematicas-aplicadas">
     <h2>Matemáticas Aplicadas</h2>
     <p>Estoy especializada en matemáticas aplicadas. Mi enfoque principal está en la modelación matemática y análisis de datos.</p>
-    <img src="images/matematicas.jpg" alt="Matemáticas Aplicadas" class="hobby-image">
-  </div>
+    <img src="images/matematicas.jpg" alt="Matemáticas Aplicadas">
+  </section>
 </body>
 </html>
