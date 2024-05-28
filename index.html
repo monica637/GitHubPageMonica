@@ -4,11 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Página de GitHub</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .full-page-image {
+      background-image: url('images/mi-imagen.jpg'); /* Asegúrate de que la ruta sea correcta */
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .content {
+      color: white;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenido a mi página de GitHub</h1>
-  <p>¡Hola, mundo! Este es mi primer GitHub Page.</p>
-  <img src="images/programacion.jpg" alt="Mi imagen">
+  <div class="full-page-image">
+    <div class="content">
+      <h1>Bienvenido a mi página de GitHub</h1>
+      <p>¡Hola, mundo! Este es mi primer GitHub Page.</p>
+    </div>
+  </div>
 </body>
 </html>
 
