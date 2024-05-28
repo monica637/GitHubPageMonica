@@ -8,37 +8,38 @@
     body, html {
       margin: 0;
       padding: 0;
+      height: 100%;
       width: 100%;
     }
-    nav {
-      background: rgba(0, 0, 0, 0.8);
-      padding: 10px;
-      position: fixed;
+    .full-page-image {
+      background-image: url('images/programacion.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100%;
       width: 100%;
-      top: 0;
-      left: 0;
       display: flex;
       justify-content: center;
+      align-items: center;
     }
-    nav a {
+    .content {
       color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: 1.2em;
-    }
-    section {
-      padding: 60px 20px;
-      min-height: 100vh;
-    }
-    .principal {
-      padding-top: 70px; /* Para que el contenido no esté debajo del menú */
       text-align: center;
-    }
-    .hobbies, .matematicas-aplicadas {
-      background-color: #f4f4f4;
+      background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
       padding: 20px;
+      border-radius: 10px;
     }
-    .hobbies img {
+    .hobby-section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+    .hobby-section h2 {
+      color: #333;
+    }
+    .hobby-section p {
+      color: #666;
+    }
+    .hobby-image {
       max-width: 100%;
       height: auto;
       margin-bottom: 10px;
@@ -46,30 +47,46 @@
   </style>
 </head>
 <body>
-  <nav>
-    <a href="#principal">Principal</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#matematicas-aplicadas">Matemáticas Aplicadas</a>
-  </nav>
+  <div class="full-page-image">
+    <div class="content">
+      <h1>Bienvenido a mi página de GitHub</h1>
+      <p>¡Hola, mundo! Este es mi primer GitHub Page.</p>
+    </div>
+  </div>
 
-  <section id="principal" class="principal">
-    <h1>Bienvenido a mi página de GitHub</h1>
-    <p>¡Hola, mundo! Este es mi primer GitHub Page.</p>
-    <img src="images/nombre-de-tu-imagen.jpg" alt="Mi imagen" style="max-width:100%; height:auto;">
-  </section>
-
-  <section id="hobbies" class="hobbies">
+  <div class="hobby-section">
     <h2>Hobbies</h2>
-    <p>Aquí puedes agregar fotos y descripciones de tus hobbies.</p>
-    <img src="images/hobby1.jpg" alt="Hobby 1">
-    <img src="images/hobby2.jpg" alt="Hobby 2">
-    <img src="images/hobby3.jpg" alt="Hobby 3">
-    <img src="images/hobby4.jpg" alt="Hobby 4">
-  </section>
+    <div>
+      <h3>Natación</h3>
+      <p>Practico natación regularmente. Es una actividad que me ayuda a mantenerme en forma y relajarme.</p>
+      <img src="images/natacion.jpg" alt="Natación" class="hobby-image">
+    </div>
+    <div>
+      <h3>Comida</h3>
+      <p>Soy una apasionada de la comida. Me encanta probar nuevas recetas y experimentar en la cocina.</p>
+      <img src="images/comida.jpg" alt="Comida" class="hobby-image">
+    </div>
+    <div>
+      <h3>Correr</h3>
+      <p>Disfruto correr al aire libre. Me gusta participar en carreras locales y mantener un estilo de vida activo.</p>
+      <img src="images/correr.jpg" alt="Correr" class="hobby-image">
+    </div>
+    <div>
+      <h3>Bordar</h3>
+      <p>Bordar es una de mis actividades favoritas. Encuentro mucha satisfacción en crear diseños hermosos con hilo y aguja.</p>
+      <img src="images/bordar.jpg" alt="Bordar" class="hobby-image">
+    </div>
+    <div>
+      <h3>Rompecabezas</h3>
+      <p>Me encanta resolver rompecabezas en mi tiempo libre. Es una excelente forma de ejercitar la mente.</p>
+      <img src="images/rompecabezas.jpg" alt="Rompecabezas" class="hobby-image">
+    </div>
+  </div>
 
-  <section id="matematicas-aplicadas" class="matematicas-aplicadas">
+  <div class="hobby-section">
     <h2>Matemáticas Aplicadas</h2>
-    <p>Aquí puedes agregar información sobre tu carrera académica en matemáticas aplicadas.</p>
-  </section>
+    <p>Estoy especializada en matemáticas aplicadas. Mi enfoque principal está en la modelación matemática y análisis de datos.</p>
+    <img src="images/matematicas.jpg" alt="Matemáticas Aplicadas" class="hobby-image">
+  </div>
 </body>
 </html>
